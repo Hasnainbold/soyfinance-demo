@@ -3,3 +3,30 @@ __pycache__/
 .env
 venv/
 tunnel.py
+.python-version
+grep.exe.stackdump
+
+# Utility/download scripts (not needed for deployment)
+download_*.py
+explore_*.py
+fill_missing_*.py
+find_api.py
+make_maharashtra_csv.py
+merge_all_years.py
+check_csv.py
+Soyabean.py.txt
+Soyabean1.py
+
+# Intermediate CSVs (only FINAL versions needed)
+soybean_daily_avg.csv
+soybean_daily_avg_2022_2026.csv
+soybean_history.csv
+soybean_maharashtra_detail.csv
+soybean_mandi_detail.csv
+soybean_mandi_detail_2021.csv
+soybean_mandi_detail_2022_2026.csv
+soybean_monthly_avg.csv
+soybean_raw.csv
+
+# Local snapshots (generated at runtime)
+price_history/
