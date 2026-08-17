@@ -9,8 +9,6 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import json
 import os
-import subprocess
-import platform
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -144,7 +142,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 _APP_DIR       = os.path.dirname(os.path.abspath(__file__))
 _PARENT_DIR    = os.path.dirname(_APP_DIR)
 MAHARASHTRA_DAILY_CSV  = os.path.join(_APP_DIR, "soybean_maharashtra_daily.csv")
-MANDI_DETAIL_CSV       = os.path.join(_APP_DIR, "soybean_mandi_detail_FINAL.csv")
+MANDI_DETAIL_CSV       = os.path.join(_APP_DIR, "soybean_mandi_detail_2022_2026.csv")
 EXCEL_MANDI_FILE       = os.path.join(_APP_DIR, "Mandi_price_data.xlsx")
 
 def format_inr(number):
@@ -183,16 +181,24 @@ def load_maharashtra_daily():
 
 
 @st.cache_data(show_spinner=False)
-def load_mandi_detail_maharashtra():
-    """Load district-level detail for Maharashtra from the FINAL CSV (~30k rows)."""
+def load_mandi_detail():
+    """Load district-level detail from the 2022-2026 CSV (all states)."""
     if not os.path.exists(MANDI_DETAIL_CSV):
         return None
     df = pd.read_csv(MANDI_DETAIL_CSV)
-    mh = df[df["state_name"] == "Maharashtra"].copy()
-    mh["date"] = pd.to_datetime(mh["date"])
+    df["date"] = pd.to_datetime(df["date"])
     for col in ["min_price", "max_price", "modal_price"]:
-        mh[col] = pd.to_numeric(mh[col], errors="coerce")
-    return mh.sort_values("date").reset_index(drop=True)
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df.sort_values("date").reset_index(drop=True)
+
+@st.cache_data(show_spinner=False)
+def load_mandi_detail_maharashtra():
+    """Load district-level detail for Maharashtra from the CSV."""
+    df = load_mandi_detail()
+    if df is None:
+        return None
+    mh = df[df["state_name"] == "Maharashtra"].copy()
+    return mh.reset_index(drop=True)
 
 
 @st.cache_data(show_spinner=False)
@@ -214,40 +220,56 @@ def load_excel_mandi():
 
 def build_real_price_history():
     """
-    Build a real historical price series from Maharashtra daily CSV.
+    Build a real historical price series.
+    Try Maharashtra daily CSV first, then fall back to mandi detail CSV (daily avg).
     Returns DataFrame with columns: Date, Price, MSP  (or None).
     """
     mh = load_maharashtra_daily()
-    if mh is None or len(mh) == 0:
+    if mh is not None and len(mh) > 0:
+        hist = pd.DataFrame({
+            "Date": mh["date"],
+            "Price": mh["avg_price"].round().astype(int),
+            "MSP": mh["msp"].astype(int),
+        })
+        if "num_districts" in mh.columns:
+            hist["Volume"] = (mh["num_districts"] * np.random.RandomState(42).randint(400, 900, len(mh))).astype(int)
+        return hist.reset_index(drop=True)
+
+    # Fallback: build daily avg from the mandi detail CSV
+    detail = load_mandi_detail()
+    if detail is None or len(detail) == 0:
         return None
+    daily = detail.groupby("date").agg(
+        avg_price=("modal_price", "mean"),
+        num_mandis=("modal_price", "count"),
+    ).reset_index()
+    daily = daily.sort_values("date")
+    daily["msp"] = daily["date"].apply(_msp_for_date)
     hist = pd.DataFrame({
-        "Date": mh["date"],
-        "Price": mh["avg_price"].round().astype(int),
-        "MSP": mh["msp"].astype(int),
+        "Date": daily["date"],
+        "Price": daily["avg_price"].round().astype(int),
+        "MSP": daily["msp"].astype(int),
     })
-    # Also merge in Volume proxy: num_districts as trading activity indicator
-    if "num_districts" in mh.columns:
-        hist["Volume"] = (mh["num_districts"] * np.random.RandomState(42).randint(400, 900, len(mh))).astype(int)
     return hist.reset_index(drop=True)
 
 
 def get_mandi_detail_for_date(selected_date):
     """
-    Retrieve district-level mandi data for a specific date from CSV.
+    Retrieve district-level mandi data for a specific date from CSV (all states).
     Returns DataFrame compatible with API format, or None.
     """
-    mh = load_mandi_detail_maharashtra()
-    if mh is None:
+    detail = load_mandi_detail()
+    if detail is None:
         return None
     date_str = pd.Timestamp(selected_date)
-    day_data = mh[mh["date"] == date_str]
+    day_data = detail[detail["date"] == date_str]
     if len(day_data) == 0:
         # Try closest date within ±2 days
-        nearby = mh[(mh["date"] >= date_str - pd.Timedelta(days=2)) &
-                     (mh["date"] <= date_str + pd.Timedelta(days=2))]
+        nearby = detail[(detail["date"] >= date_str - pd.Timedelta(days=2)) &
+                     (detail["date"] <= date_str + pd.Timedelta(days=2))]
         if len(nearby) > 0:
             closest_date = nearby.iloc[(nearby["date"] - date_str).abs().argsort().iloc[0]]["date"]
-            day_data = mh[mh["date"] == closest_date]
+            day_data = detail[detail["date"] == closest_date]
     if len(day_data) == 0:
         return None
     # Normalize columns to match API format
@@ -273,26 +295,11 @@ def _api_call(api_key, extra_params=None, timeout=60):
     try:
         s = requests.Session()
         s.mount("https://", HTTPAdapter(max_retries=Retry(total=3, backoff_factor=1)))
-        # Use full_url directly so brackets stay unencoded
         r = s.get(full_url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
         r.raise_for_status()
         return r.json(), None
     except Exception as e:
-        pass
-    try:
-        if platform.system() == "Windows":
-            # Quote slashes in date string for PowerShell
-            ps_url = full_url.replace("/", "\'+ [char]0x2F +'\'")
-            cmd = ["powershell", "-Command",
-                   f'(Invoke-WebRequest -Uri "{full_url}" -TimeoutSec {timeout} -UseBasicParsing).Content']
-        else:
-            cmd = ["curl", "-s", "-m", str(timeout), f'"{full_url}"']
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 15)
-        if result.returncode == 0 and result.stdout.strip():
-            return json.loads(result.stdout), None
-    except:
-        pass
-    return None, "API unreachable"
+        return None, f"API unreachable: {e}"
 
 def _save_snapshot(date_str, records):
     path = os.path.join(DATA_DIR, f"{date_str}.json")

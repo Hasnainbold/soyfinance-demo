@@ -1,32 +1,63 @@
+# Python
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
 venv/
-tunnel.py
-.python-version
-grep.exe.stackdump
+.venv/
 
-# Utility/download scripts (not needed for deployment)
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.stackdump
+
+# Environment
+.env
+.env.local
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Temp & scratch files
+*.tmp
+~$*
+~WRL*
+
+# Don't include other data scripts
 download_*.py
 explore_*.py
-fill_missing_*.py
-find_api.py
-make_maharashtra_csv.py
-merge_all_years.py
-check_csv.py
-Soyabean.py.txt
-Soyabean1.py
+fill_*.py
+find_*.py
+make_*.py
+merge_*.py
+check_*.py
+tunnel.py
+Soyabean*.py*
+grep.exe.stackdump
 
-# Intermediate CSVs (only FINAL versions needed)
+# Don't include other CSV files (only keep the ones we need)
 soybean_daily_avg.csv
-soybean_daily_avg_2022_2026.csv
+soybean_daily_avg_FINAL.csv
 soybean_history.csv
 soybean_maharashtra_detail.csv
 soybean_mandi_detail.csv
 soybean_mandi_detail_2021.csv
-soybean_mandi_detail_2022_2026.csv
+soybean_mandi_detail_FINAL.csv
 soybean_monthly_avg.csv
 soybean_raw.csv
+soybean_maharashtra_daily.csv
 
-# Local snapshots (generated at runtime)
-price_history/
+# Keep these (not ignored):
+# soybean_mandi_detail_2022_2026.csv
+# soybean_daily_avg_2022_2026.csv
+# Mandi_price_data.xlsx
+# app.py
+# requirements.txt
