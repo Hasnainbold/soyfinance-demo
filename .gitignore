@@ -61,3 +61,16 @@ soybean_maharashtra_daily.csv
 # Mandi_price_data.xlsx
 # app.py
 # requirements.txt
+
+# platform DB (regenerate with: python seed.py --reset)
+soyfinance.db
+verification_runs/
+
+# Agmarknet 2.0 personal access token -- never commit
+agmarknet_token.txt
+agmarknet_raw/
+china_cache/
+surepass_token.txt
+
+# Real land-record documents (personal data) -- keep out of the repo
+official_712_*.pdf

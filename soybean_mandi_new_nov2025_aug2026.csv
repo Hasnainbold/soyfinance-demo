@@ -1,0 +1,841 @@
+date,commodity,state_id,state_name,district_id,district_name,min_price,max_price,modal_price
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,5800,5800,5800.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,6410,6410,6410.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4800,6549,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4000,6590,6480.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,5705,6495,6495.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1620,6532,6100.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5810,6510,6100.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,5200,6490,6490.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,3400,6550,6455.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2600,6500,5478.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6550,6550.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4401,6001,6001.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6100,6611,6550.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,4800,5300,5000.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6000,6550,6200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3605,6650,6525.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3451,6514,6481.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3500,6830,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5950,6270,6270.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4500,7000,6300.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6182,6400,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5490,5520,5510.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5500,6350,6075.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6000,6511,6350.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Chittorgarh,Chittorgarh,5200,6540,5870.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6271,6335,6335.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5850,6566,6208.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6505,6365.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5685,6035,5685.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3800,6401,6401.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,5105,6180,6180.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,9000,9500,9250.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6200,6400,6300.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Dindigul,Dindigul,8000,10000,9000.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Sivaganga,Sivaganga,10000,11000,10500.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Sabarkantha,Sabarkantha,6125,6330,6330.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,3500,6750,6075.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2200,6570,6450.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,3080,6730,6590.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,3501,6630,6541.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khargone,Khargone,4700,5912,5912.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,1800,6625,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3425,6570,6150.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2000,6550,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4111,6536,6301.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5700,6461,6451.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5500,5500,5500.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6520,6360.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,6265,6265,6265.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6645,6585.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,4500,4500,4500.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6000,6100,6000.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,5340,6050,5850.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,1700,6400,6366.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,4300,6426,6410.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3651,6618,6560.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4851,6480,6480.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Tikamgarh,Tikamgarh,5915,6250,6250.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5660,5940,5940.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6140,6365,6200.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6600,6800,6700.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,2800,6400,6155.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5500,6338,5919.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6000,6350,6200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6150,6168,6168.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6250,6410,6300.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6400,6510,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4705,6565,6100.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4025,6595,6450.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,5850,5910,5910.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,1111,6568,6501.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4200,6301,6301.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5805,6290,6220.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,8000,8500,8250.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,4300,6526,6200.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,6119,6518,6375.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6226,6226,6226.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,800,7120,6300.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ashoknagar,Ashoknagar,2205,6480,6390.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,850,6485,6440.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1801,6560,5000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5540,5540,5540.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5500,6001,6001.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,1500,6410,6154.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,6454,6490,6490.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Umariya,Umariya,6100,6100,6100.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,5000,5000,5000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5800,5800,5800.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5700,5800,5800.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3401,6651,6352.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3775,6350,6350.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,3000,6385,6330.0
+2025-11-08,Soyabean,Chattisgarh,Chattisgarh,Kabirdham,Kabirdham,6200,6200,6200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4005,6390,6390.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4200,4200,4200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,3900,6450,6100.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5500,6000,6000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,3400,6546,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5990,6405,6405.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6000,6600,6300.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6025,6600,6400.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,6369,6551,6465.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Gir Somnath,Gir Somnath,5505,6300,6150.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Dahod,Dahod,6200,6400,6325.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6300,6400,6367.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6500,6500.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6000,6800,6465.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,4000,6171,6171.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Satna,Satna,6200,6200,6200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,4925,6550,6451.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,6411,6411,6411.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5910,6050,6050.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4600,6428,6428.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,1000,6540,6400.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,6170,6500,6400.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6100,6301,6225.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6300,6300,6300.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6250,6600,6350.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar,6400,6400,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,5799,6371,6371.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,4100,6463,6463.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6121,6121,6121.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5650,6175,6175.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5605,6255,5830.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6005,6115,6055.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5500,6305,6200.0
+2025-11-08,Soyabean,Karnataka,Karnataka,Bidar,Bidar,5811,6626,6383.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,4000,6700,6625.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6500,6400.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5605,5605,5605.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6300,6728,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,6390,6390,6390.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6000,6000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,6000,6000,6000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6376,6376.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4566,6551,6540.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,5000,6400,6400.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5000,6000,5500.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6300,6489,6394.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6580,6215.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6150,6550,6450.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6685,6380.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,4990,5670,5670.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,9000,10000,9500.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,8000,10000,9000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,2400,6681,6592.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Parbhani,Parbhani,4000,6300,6300.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6060,6302,6302.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,5300,6460,6460.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3300,6621,6621.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,2880,6480,6480.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5300,5300,5300.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,5400,6525,6525.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5900,5900,5900.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,6000,6150,6010.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6451,6299.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,6411,6411,6411.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,6175,6175,6175.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,4250,6230,6230.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,5960,6460,6210.0
+2025-11-08,Soyabean,Uttar Pradesh,Uttar Pradesh,Lalitpur,Lalitpur,5708,6010,5775.31
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5600,6325,6268.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,6200,6200,6200.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5000,5000,5000.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,3452,6701,6701.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,6035,6350,6350.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3400,6490,6490.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,5000,6503,6480.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5550,6575,6575.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3705,6623,6600.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,4801,6170,5851.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6195,6195.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3760,6490,6200.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,5625,6550,6088.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,4250,6411,6250.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6200,6450,6325.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5350,6520,5700.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Pune,Pune,5410,6400,6400.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5380,6510,6200.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,5330,6505,5900.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,6250,6400,6250.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,5200,6195,6195.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6500,6500,6500.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,2890,6510,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4000,6560,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3451,6667,6400.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2500,6446,6390.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3191,6580,6471.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5700,5920,5920.0
+2025-11-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhindwara,Chhindwara,5975,6450,6300.0
+2025-11-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5765,6382,6074.0
+2025-11-08,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6500,6250.0
+2025-11-08,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5550,6050,5800.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,5800,5800,5800.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,6410,6410,6410.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4800,6549,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4000,6590,6480.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,5705,6495,6495.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1620,6532,6100.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5810,6510,6100.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,5200,6490,6490.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,3400,6550,6455.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2600,6500,5478.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6550,6550.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4401,6001,6001.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6100,6611,6550.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,4800,5300,5000.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6000,6550,6200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3605,6650,6525.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3451,6514,6481.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3500,6830,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5950,6270,6270.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4500,7000,6300.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6182,6400,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5490,5520,5510.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5500,6350,6075.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6000,6511,6350.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Chittorgarh,Chittorgarh,5200,6540,5870.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6271,6335,6335.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5850,6566,6208.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6505,6365.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5685,6035,5685.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3800,6401,6401.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,5105,6180,6180.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,9000,9500,9250.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6200,6400,6300.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Dindigul,Dindigul,8000,10000,9000.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Sivaganga,Sivaganga,10000,11000,10500.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Sabarkantha,Sabarkantha,6125,6330,6330.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,3500,6750,6075.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2200,6570,6450.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,3080,6730,6590.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,3501,6630,6541.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khargone,Khargone,4700,5912,5912.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,1800,6625,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3425,6570,6150.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2000,6550,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4111,6536,6301.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5700,6461,6451.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5500,5500,5500.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6520,6360.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,6265,6265,6265.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6645,6585.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,4500,4500,4500.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6000,6100,6000.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,5340,6050,5850.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,1700,6400,6366.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,4300,6426,6410.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3651,6618,6560.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4851,6480,6480.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Tikamgarh,Tikamgarh,5915,6250,6250.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5660,5940,5940.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6140,6365,6200.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6600,6800,6700.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,2800,6400,6155.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5500,6338,5919.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6000,6350,6200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6150,6168,6168.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6250,6410,6300.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6400,6510,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4705,6565,6100.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4025,6595,6450.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,5850,5910,5910.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,1111,6568,6501.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4200,6301,6301.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5805,6290,6220.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,8000,8500,8250.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,4300,6526,6200.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,6119,6518,6375.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6226,6226,6226.0
+2025-11-18,Soyabean,Chattisgarh,Chattisgarh,Kabirdham,Kabirdham,6200,6200,6200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4005,6390,6390.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4200,4200,4200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,3900,6450,6100.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5500,6000,6000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,3400,6546,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5990,6405,6405.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6000,6600,6300.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6025,6600,6400.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,6369,6551,6465.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5540,5540,5540.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5500,6001,6001.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,1500,6410,6154.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,6454,6490,6490.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Umariya,Umariya,6100,6100,6100.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,5000,5000,5000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5800,5800,5800.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5700,5800,5800.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3401,6651,6352.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3775,6350,6350.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,3000,6385,6330.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Gir Somnath,Gir Somnath,5505,6300,6150.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,800,7120,6300.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ashoknagar,Ashoknagar,2205,6480,6390.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,850,6485,6440.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1801,6560,5000.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Dahod,Dahod,6200,6400,6325.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6300,6400,6367.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6500,6500.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6000,6800,6465.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,4000,6171,6171.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Satna,Satna,6200,6200,6200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,4925,6550,6451.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,6411,6411,6411.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5910,6050,6050.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4600,6428,6428.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,1000,6540,6400.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,6170,6500,6400.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6100,6301,6225.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6300,6300,6300.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6250,6600,6350.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar,6400,6400,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,5799,6371,6371.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,4100,6463,6463.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6121,6121,6121.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5650,6175,6175.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5605,6255,5830.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6005,6115,6055.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5500,6305,6200.0
+2025-11-18,Soyabean,Karnataka,Karnataka,Bidar,Bidar,5811,6626,6383.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,4000,6700,6625.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6500,6400.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5605,5605,5605.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6300,6728,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,6390,6390,6390.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6000,6000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,6000,6000,6000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6376,6376.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4566,6551,6540.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,5000,6400,6400.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5000,6000,5500.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6300,6489,6394.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6580,6215.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6150,6550,6450.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6685,6380.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,4990,5670,5670.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,9000,10000,9500.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,8000,10000,9000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,2400,6681,6592.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Parbhani,Parbhani,4000,6300,6300.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6060,6302,6302.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,5300,6460,6460.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3300,6621,6621.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,2880,6480,6480.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5300,5300,5300.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,5400,6525,6525.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5900,5900,5900.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,6000,6150,6010.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6451,6299.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,6411,6411,6411.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,6175,6175,6175.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,4250,6230,6230.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,5960,6460,6210.0
+2025-11-18,Soyabean,Uttar Pradesh,Uttar Pradesh,Lalitpur,Lalitpur,5708,6010,5775.31
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5600,6325,6268.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,6200,6200,6200.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5000,5000,5000.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,3452,6701,6701.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,6035,6350,6350.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3400,6490,6490.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,5000,6503,6480.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5550,6575,6575.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3705,6623,6600.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,4801,6170,5851.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6195,6195.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3760,6490,6200.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,5625,6550,6088.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,4250,6411,6250.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6200,6450,6325.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5350,6520,5700.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Pune,Pune,5410,6400,6400.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5380,6510,6200.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,5330,6505,5900.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,6250,6400,6250.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,5200,6195,6195.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6500,6500,6500.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,2890,6510,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4000,6560,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3451,6667,6400.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2500,6446,6390.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3191,6580,6471.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5700,5920,5920.0
+2025-11-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhindwara,Chhindwara,5975,6450,6300.0
+2025-11-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-11-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5765,6382,6074.0
+2025-11-18,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6500,6250.0
+2025-11-18,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5550,6050,5800.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,5800,5800,5800.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,6410,6410,6410.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4800,6549,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4000,6590,6480.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,5705,6495,6495.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1620,6532,6100.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5810,6510,6100.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,5200,6490,6490.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,3400,6550,6455.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2600,6500,5478.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6550,6550.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4401,6001,6001.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6100,6611,6550.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,4800,5300,5000.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6000,6550,6200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3605,6650,6525.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3451,6514,6481.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3500,6830,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5950,6270,6270.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4500,7000,6300.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6182,6400,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5490,5520,5510.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5500,6350,6075.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6000,6511,6350.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Chittorgarh,Chittorgarh,5200,6540,5870.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6271,6335,6335.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5850,6566,6208.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6505,6365.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5685,6035,5685.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3800,6401,6401.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,5105,6180,6180.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,9000,9500,9250.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6200,6400,6300.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Dindigul,Dindigul,8000,10000,9000.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Sivaganga,Sivaganga,10000,11000,10500.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Sabarkantha,Sabarkantha,6125,6330,6330.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,3500,6750,6075.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2200,6570,6450.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,3080,6730,6590.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,3501,6630,6541.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khargone,Khargone,4700,5912,5912.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,1800,6625,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3425,6570,6150.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2000,6550,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4111,6536,6301.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5700,6461,6451.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5500,5500,5500.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6520,6360.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,6265,6265,6265.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6645,6585.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,4500,4500,4500.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6000,6100,6000.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,5340,6050,5850.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,1700,6400,6366.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,4300,6426,6410.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3651,6618,6560.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4851,6480,6480.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Tikamgarh,Tikamgarh,5915,6250,6250.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5660,5940,5940.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6140,6365,6200.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6600,6800,6700.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,2800,6400,6155.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5500,6338,5919.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6000,6350,6200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6150,6168,6168.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6250,6410,6300.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6400,6510,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4705,6565,6100.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4025,6595,6450.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,5850,5910,5910.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,1111,6568,6501.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4200,6301,6301.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5805,6290,6220.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,8000,8500,8250.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,4300,6526,6200.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,6119,6518,6375.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6226,6226,6226.0
+2025-12-08,Soyabean,Chattisgarh,Chattisgarh,Kabirdham,Kabirdham,6200,6200,6200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4005,6390,6390.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4200,4200,4200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,3900,6450,6100.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5500,6000,6000.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,3400,6546,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5990,6405,6405.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6000,6600,6300.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6025,6600,6400.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,6369,6551,6465.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Gir Somnath,Gir Somnath,5505,6300,6150.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Dahod,Dahod,6200,6400,6325.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6300,6400,6367.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6500,6500.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6000,6800,6465.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,4000,6171,6171.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Satna,Satna,6200,6200,6200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,4925,6550,6451.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,6411,6411,6411.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5910,6050,6050.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4600,6428,6428.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,1000,6540,6400.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,6170,6500,6400.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6100,6301,6225.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6300,6300,6300.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6250,6600,6350.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar,6400,6400,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,5799,6371,6371.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,4100,6463,6463.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6121,6121,6121.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5650,6175,6175.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5605,6255,5830.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6005,6115,6055.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5500,6305,6200.0
+2025-12-08,Soyabean,Karnataka,Karnataka,Bidar,Bidar,5811,6626,6383.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,4000,6700,6625.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6500,6400.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5605,5605,5605.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6300,6728,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,6390,6390,6390.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6000,6000.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,6000,6000,6000.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6376,6376.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4566,6551,6540.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,5000,6400,6400.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5000,6000,5500.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6300,6489,6394.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6580,6215.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6150,6550,6450.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6685,6380.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,4990,5670,5670.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,9000,10000,9500.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,8000,10000,9000.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,2400,6681,6592.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Parbhani,Parbhani,4000,6300,6300.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6060,6302,6302.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,5300,6460,6460.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3300,6621,6621.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,2880,6480,6480.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5300,5300,5300.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,5400,6525,6525.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5900,5900,5900.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,6000,6150,6010.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6451,6299.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,6411,6411,6411.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,6175,6175,6175.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,4250,6230,6230.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,5960,6460,6210.0
+2025-12-08,Soyabean,Uttar Pradesh,Uttar Pradesh,Lalitpur,Lalitpur,5708,6010,5775.31
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5600,6325,6268.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,6200,6200,6200.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5000,5000,5000.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,3452,6701,6701.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,6035,6350,6350.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3400,6490,6490.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,5000,6503,6480.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5550,6575,6575.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3705,6623,6600.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,4801,6170,5851.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6195,6195.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3760,6490,6200.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,5625,6550,6088.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Beed,Beed,4250,6411,6250.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6200,6450,6325.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5350,6520,5700.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Pune,Pune,5410,6400,6400.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5380,6510,6200.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,5330,6505,5900.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,6250,6400,6250.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,5200,6195,6195.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6500,6500,6500.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,2890,6510,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4000,6560,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3451,6667,6400.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2500,6446,6390.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3191,6580,6471.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5700,5920,5920.0
+2025-12-08,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhindwara,Chhindwara,5975,6450,6300.0
+2025-12-08,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-08,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5765,6382,6074.0
+2025-12-08,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6500,6250.0
+2025-12-08,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5550,6050,5800.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,5800,5800,5800.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,6410,6410,6410.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4800,6549,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4000,6590,6480.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,5705,6495,6495.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,1620,6532,6100.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5810,6510,6100.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,5200,6490,6490.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,3400,6550,6455.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2600,6500,5478.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6550,6550.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,4401,6001,6001.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6100,6611,6550.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,4800,5300,5000.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6000,6550,6200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3605,6650,6525.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3451,6514,6481.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3500,6830,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5950,6270,6270.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4500,7000,6300.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6182,6400,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5490,5520,5510.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5500,6350,6075.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6000,6511,6350.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Chittorgarh,Chittorgarh,5200,6540,5870.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6271,6335,6335.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5850,6566,6208.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6505,6365.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5685,6035,5685.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3800,6401,6401.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,5105,6180,6180.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,9000,9500,9250.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6200,6400,6300.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Dindigul,Dindigul,8000,10000,9000.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Sivaganga,Sivaganga,10000,11000,10500.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Sabarkantha,Sabarkantha,6125,6330,6330.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,3500,6750,6075.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2200,6570,6450.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,3080,6730,6590.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,3501,6630,6541.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khargone,Khargone,4700,5912,5912.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,1800,6625,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3425,6570,6150.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,2000,6550,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4111,6536,6301.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5700,6461,6451.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,5500,5500,5500.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6520,6360.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,6265,6265,6265.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6645,6585.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,4500,4500,4500.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6000,6100,6000.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,5340,6050,5850.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,1700,6400,6366.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,4300,6426,6410.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3651,6618,6560.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,4851,6480,6480.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Tikamgarh,Tikamgarh,5915,6250,6250.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5660,5940,5940.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6140,6365,6200.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6600,6800,6700.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,2800,6400,6155.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5500,6338,5919.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6000,6350,6200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6150,6168,6168.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6250,6410,6300.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6400,6510,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,4705,6565,6100.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4025,6595,6450.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,5850,5910,5910.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,1111,6568,6501.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4200,6301,6301.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5805,6290,6220.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Ramanathapuram,Ramanathapuram,8000,8500,8250.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,4300,6526,6200.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,6119,6518,6375.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6226,6226,6226.0
+2025-12-18,Soyabean,Chattisgarh,Chattisgarh,Kabirdham,Kabirdham,6200,6200,6200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4005,6390,6390.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,4200,4200,4200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,3900,6450,6100.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5500,6000,6000.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,3400,6546,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5990,6405,6405.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6000,6600,6300.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6040,6595,6317.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6400,6766,6650.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Latur,Latur,6200,6621,6469.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,6111,6700,6676.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6201,6201,6201.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Sangli,Sangli,5540,5940,5760.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6595,6195.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,6420,6525,6525.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,5801,5801,5801.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,5300,6246,6246.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,3650,6351,6099.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,5400,6140,6140.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5700,6055,5850.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Jhalawar,Jhalawar,5500,6500,6000.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,6025,6600,6400.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Ahilyanagar,Ahilyanagar,6369,6551,6465.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Gir Somnath,Gir Somnath,5505,6300,6150.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Dahod,Dahod,6200,6400,6325.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6300,6400,6367.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Yavatmal,Yavatmal,6500,6500,6500.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6000,6800,6465.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Bhopal,Bhopal,4000,6171,6171.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Satna,Satna,6200,6200,6200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,4925,6550,6451.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,6411,6411,6411.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5910,6050,6050.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4600,6428,6428.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,1000,6540,6400.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nagpur,Nagpur,6170,6500,6400.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Dharashiv,Dharashiv,6100,6301,6225.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Solapur,Solapur,6300,6300,6300.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,6250,6600,6350.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar,6400,6400,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Khandwa,Khandwa,5799,6371,6371.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,4100,6463,6463.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6121,6121,6121.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,5650,6175,6175.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Junagarh,Junagarh,5605,6255,5830.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,6005,6115,6055.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5500,6305,6200.0
+2025-12-18,Soyabean,Karnataka,Karnataka,Bidar,Bidar,5811,6626,6383.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Nashik,Nashik,4000,6700,6625.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6500,6400.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,5605,5605,5605.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Bundi,Bundi,6300,6728,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,6390,6390,6390.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,6000,6000,6000.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,6000,6000,6000.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6376,6376.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,4566,6551,6540.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,5000,6400,6400.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Rajkot,Rajkot,5000,6000,5500.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,6300,6489,6394.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5850,6580,6215.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,6150,6550,6450.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6685,6380.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,4990,5670,5670.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,9000,10000,9500.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Theni,Theni,8000,10000,9000.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,2400,6681,6592.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Parbhani,Parbhani,4000,6300,6300.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6060,6302,6302.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,5300,6460,6460.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,3300,6621,6621.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Harda,Harda,2880,6480,6480.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,5300,5300,5300.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,5400,6525,6525.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,5900,5900,5900.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Alirajpur,Alirajpur,6000,6150,6010.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,5350,6451,6299.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,6411,6411,6411.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,6175,6175,6175.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Guna,Guna,4250,6230,6230.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Pratapgarh,Pratapgarh,5960,6460,6210.0
+2025-12-18,Soyabean,Uttar Pradesh,Uttar Pradesh,Lalitpur,Lalitpur,5708,6010,5775.31
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,5600,6325,6268.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Neemuch,Neemuch,6200,6200,6200.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dindori,Dindori,5000,5000,5000.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Indore,Indore,3452,6701,6701.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,6035,6350,6350.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3400,6490,6490.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,5000,6503,6480.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,5550,6575,6575.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,3705,6623,6600.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,4801,6170,5851.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,6000,6195,6195.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,3760,6490,6200.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Buldhana,Buldhana,5625,6550,6088.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Beed,Beed,4250,6411,6250.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Hingoli,Hingoli,6200,6450,6325.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Amarawati,Amarawati,5350,6520,5700.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Pune,Pune,5410,6400,6400.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Washim,Washim,5380,6510,6200.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Wardha,Wardha,5330,6505,5900.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Jalna,Jalna,6250,6400,6250.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,5200,6195,6195.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,6500,6500,6500.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,2890,6510,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,4000,6560,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,3451,6667,6400.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,2500,6446,6390.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,3191,6580,6471.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,5700,5920,5920.0
+2025-12-18,Soyabean,Madhya Pradesh,Madhya Pradesh,Chhindwara,Chhindwara,5975,6450,6300.0
+2025-12-18,Soyabean,Tamil Nadu,Tamil Nadu,Madurai,Madurai,10000,11000,10500.0
+2025-12-18,Soyabean,Rajasthan,Rajasthan,Baran,Baran,5765,6382,6074.0
+2025-12-18,Soyabean,Maharashtra,Maharashtra,Akola,Akola,6000,6500,6250.0
+2025-12-18,Soyabean,Gujarat,Gujarat,Amreli,Amreli,5550,6050,5800.0

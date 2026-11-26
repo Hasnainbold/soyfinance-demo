@@ -1,0 +1,949 @@
+<title>AgriCred Risk Methodology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground: #F4F1EA;
+    --surface: #FFFFFF;
+    --surface-2: #EDE9DF;
+    --ink: #1C1E24;
+    --ink-soft: #494C56;
+    --ink-faint: #757680;
+    --rule: #DAD4C6;
+    --rule-strong: #C3BBA6;
+    --accent: #35605B;
+    --accent-ink: #24433F;
+    --accent-soft: #E1EBE8;
+
+    --t1: #2F6F4F;  --t1-bg: #E6F0E9;
+    --t2: #3C6C8C;  --t2-bg: #E4EDF3;
+    --t3: #9E6D1B;  --t3-bg: #F4EBD9;
+    --t4: #A2453A;  --t4-bg: #F3E3E0;
+
+    --shadow: 0 1px 2px rgba(28,30,36,.04), 0 8px 24px -12px rgba(28,30,36,.12);
+    --measure: 68ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #131519;
+      --surface: #1A1C22;
+      --surface-2: #20232B;
+      --ink: #ECE9E1;
+      --ink-soft: #ABADB5;
+      --ink-faint: #7C7E88;
+      --rule: #2B2E37;
+      --rule-strong: #3A3E49;
+      --accent: #7FB4AC;
+      --accent-ink: #A7CFC9;
+      --accent-soft: #1C2827;
+
+      --t1: #74C097;  --t1-bg: #16241C;
+      --t2: #82B2D2;  --t2-bg: #152430;
+      --t3: #D6A552;  --t3-bg: #241E11;
+      --t4: #DB8A7C;  --t4-bg: #271916;
+
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -14px rgba(0,0,0,.55);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #131519;
+    --surface: #1A1C22;
+    --surface-2: #20232B;
+    --ink: #ECE9E1;
+    --ink-soft: #ABADB5;
+    --ink-faint: #7C7E88;
+    --rule: #2B2E37;
+    --rule-strong: #3A3E49;
+    --accent: #7FB4AC;
+    --accent-ink: #A7CFC9;
+    --accent-soft: #1C2827;
+
+    --t1: #74C097;  --t1-bg: #16241C;
+    --t2: #82B2D2;  --t2-bg: #152430;
+    --t3: #D6A552;  --t3-bg: #241E11;
+    --t4: #DB8A7C;  --t4-bg: #271916;
+
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -14px rgba(0,0,0,.55);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 4rem) clamp(1.15rem, 4vw, 3rem) 5rem;
+  }
+
+  /* ---------- typography ---------- */
+  h1, h2, h3 {
+    font-family: "Spectral", ui-serif, Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    text-wrap: balance;
+    line-height: 1.18;
+    margin: 0;
+  }
+  p { margin: 0 0 1rem; max-width: var(--measure); }
+  a { color: var(--accent-ink); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .72rem;
+    font-weight: 500;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    border-top: 3px solid var(--accent);
+    padding-top: 1.4rem;
+    margin-bottom: 2.6rem;
+  }
+  .masthead h1 {
+    font-size: clamp(2rem, 5vw, 2.9rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: .5rem 0 .7rem;
+  }
+  .standfirst {
+    font-family: "Spectral", ui-serif, Georgia, serif;
+    font-size: clamp(1.05rem, 2.4vw, 1.24rem);
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: 1.8rem;
+  }
+  .meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: .1rem 1.5rem;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+    box-shadow: var(--shadow);
+  }
+  .meta div { padding: .35rem 0; }
+  .meta dt {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .68rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: .12rem;
+  }
+  .meta dd { margin: 0; font-size: .92rem; color: var(--ink); }
+
+  /* ---------- section rhythm ---------- */
+  section { margin-top: 3.4rem; }
+  section > h2 {
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    padding-bottom: .55rem;
+    border-bottom: 1px solid var(--rule-strong);
+    margin-bottom: 1.4rem;
+  }
+  .lead { max-width: var(--measure); }
+
+  /* ---------- callout ---------- */
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 1.15rem 1.3rem;
+    margin: 1.5rem 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .eyebrow { color: var(--accent-ink); }
+
+  .say {
+    font-family: "Spectral", ui-serif, Georgia, serif;
+    font-size: 1.12rem;
+    font-style: italic;
+    color: var(--ink);
+    max-width: 62ch;
+  }
+
+  /* ---------- tier legend ---------- */
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: .85rem;
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tiers li {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--tc, var(--rule-strong));
+    border-radius: 7px;
+    padding: .85rem .95rem 1rem;
+  }
+  .tiers li.t1 { --tc: var(--t1); }
+  .tiers li.t2 { --tc: var(--t2); }
+  .tiers li.t3 { --tc: var(--t3); }
+  .tiers li.t4 { --tc: var(--t4); }
+  .tiers .tag { display: inline-flex; align-items: baseline; gap: .45rem; margin-bottom: .35rem; }
+  .tiers .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--tc);
+  }
+  .tiers .name {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .74rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .tiers p { font-size: .84rem; color: var(--ink-soft); margin: 0; max-width: none; }
+
+  /* ---------- chips ---------- */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    white-space: nowrap;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .68rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .16rem .5rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .chip.t1 { color: var(--t1); background: var(--t1-bg); border-color: color-mix(in srgb, var(--t1) 35%, transparent); }
+  .chip.t2 { color: var(--t2); background: var(--t2-bg); border-color: color-mix(in srgb, var(--t2) 35%, transparent); }
+  .chip.t3 { color: var(--t3); background: var(--t3-bg); border-color: color-mix(in srgb, var(--t3) 35%, transparent); }
+  .chip.t4 { color: var(--t4); background: var(--t4-bg); border-color: color-mix(in srgb, var(--t4) 35%, transparent); }
+
+  /* ---------- composition bar ---------- */
+  .composition { margin: 1.6rem 0 .6rem; }
+  .comp-track {
+    display: flex;
+    height: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--rule-strong);
+  }
+  .comp-track span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .74rem;
+    font-weight: 500;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+  }
+  .comp-track .s1 { background: var(--t1); }
+  .comp-track .s2 { background: var(--t2); }
+  .comp-track .s3 { background: var(--t3); }
+  .comp-track .s4 { background: var(--t4); }
+  .comp-key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem 1.1rem;
+    margin-top: .7rem;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .74rem;
+    color: var(--ink-soft);
+  }
+  .comp-key i { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; margin-right: .35rem; vertical-align: middle; }
+
+  /* ---------- pillar ---------- */
+  .pillar { margin-top: 2.6rem; }
+  .pillar-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .5rem .9rem;
+    margin-bottom: .2rem;
+  }
+  .pillar-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .8rem;
+    color: var(--ink-faint);
+    letter-spacing: .1em;
+  }
+  .pillar-head h3 { font-size: 1.28rem; }
+  .pillar-weight {
+    margin-left: auto;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .78rem;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .pillar-weight b { color: var(--accent-ink); font-size: 1.5rem; font-weight: 500; }
+  .weight-track {
+    height: 5px;
+    background: var(--surface-2);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: .55rem 0 1rem;
+  }
+  .weight-fill { height: 100%; background: var(--accent); border-radius: 3px; }
+  .purpose { color: var(--ink-soft); font-style: italic; font-family: "Spectral", ui-serif, Georgia, serif; margin-bottom: 1rem; }
+
+  /* ---------- tables ---------- */
+  .tbl-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; }
+  caption { text-align: left; padding: .2rem 0 .6rem; font-size: .82rem; color: var(--ink-faint); }
+  th, td { text-align: left; padding: .62rem .8rem; vertical-align: top; border-bottom: 1px solid var(--rule); }
+  thead th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .66rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+    background: var(--surface-2);
+    position: sticky;
+    top: 0;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.factor { font-weight: 500; width: 33%; }
+  td.basis { width: 1%; white-space: nowrap; }
+  td.note { color: var(--ink-soft); font-size: .92rem; }
+  .flag {
+    display: inline-block;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .64rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--t4);
+    border: 1px solid color-mix(in srgb, var(--t4) 45%, transparent);
+    border-radius: 3px;
+    padding: 0 .3rem;
+    margin-left: .4rem;
+  }
+
+  /* ---------- formula ---------- */
+  .formula {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .85rem;
+    line-height: 1.75;
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: .9rem 1.05rem;
+    margin: 1rem 0 1.2rem;
+    overflow-x: auto;
+    color: var(--ink);
+  }
+  .formula .cm { color: var(--ink-faint); }
+
+  .datatoday {
+    font-size: .86rem;
+    color: var(--ink-soft);
+    border-top: 1px dashed var(--rule-strong);
+    padding-top: .7rem;
+    margin-top: .3rem;
+  }
+  .datatoday b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Q&A ---------- */
+  .qa { display: grid; gap: .9rem; margin-top: 1.3rem; }
+  .qa-item {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .qa-item .q {
+    padding: 1rem 1.1rem;
+    background: var(--surface-2);
+    border-right: 1px solid var(--rule);
+  }
+  .qa-item .a { padding: 1rem 1.1rem; }
+  .qa-item .q p, .qa-item .a p { margin: 0; max-width: none; font-size: .93rem; }
+  .qa-item .q p { font-weight: 500; }
+  .qa-item .a p { color: var(--ink-soft); }
+  .qa-item .q .eyebrow, .qa-item .a .eyebrow { display: block; margin-bottom: .4rem; }
+
+  /* ---------- ordered roadmap ---------- */
+  ol.road { counter-reset: step; list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .7rem; }
+  ol.road li {
+    counter-increment: step;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: .8rem;
+    align-items: start;
+    max-width: var(--measure);
+  }
+  ol.road li::before {
+    content: counter(step);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .82rem;
+    font-weight: 500;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    border-radius: 5px;
+    width: 2rem; height: 2rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  ol.road li p { margin: .15rem 0 0; font-size: .93rem; color: var(--ink-soft); }
+
+  /* ---------- citations ---------- */
+  .cites { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .9rem; }
+  .cites li {
+    font-size: .9rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule-strong);
+    max-width: var(--measure);
+  }
+  .cites .src { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .82rem; color: var(--ink); }
+  .cites .use { color: var(--ink-faint); }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule-strong);
+    font-size: .82rem;
+    color: var(--ink-faint);
+    max-width: var(--measure);
+  }
+
+  /* ---------- subsections / verification ---------- */
+  .subhead {
+    font-family: "Spectral", ui-serif, Georgia, serif;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 2.2rem 0 .55rem;
+    padding-left: .7rem;
+    border-left: 3px solid var(--accent);
+  }
+  .note-line {
+    font-size: .85rem;
+    color: var(--ink-faint);
+    max-width: var(--measure);
+    margin: 0 0 1.1rem;
+  }
+  .tiers li.v-mach { --tc: var(--t1); }
+  .tiers li.v-inst { --tc: var(--t2); }
+  .tiers li.v-3p   { --tc: var(--t3); }
+  .tiers li.v-self { --tc: var(--t4); }
+  .tiers .dot { font-size: 1rem; line-height: 1; color: var(--tc); }
+  td.basis .chip { font-size: .6rem; letter-spacing: .04em; }
+  td.basis em { color: var(--ink-faint); font-size: .82rem; }
+
+  @media (max-width: 620px) {
+    body { font-size: 16px; }
+    .qa-item { grid-template-columns: 1fr; }
+    .qa-item .q { border-right: none; border-bottom: 1px solid var(--rule); }
+    .pillar-weight { margin-left: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="eyebrow">Risk Engine · Methodology &amp; Assumptions</span>
+    <h1>What the collateral risk score is built on</h1>
+    <p class="standfirst">Every input to the score, classified by how well established the method behind it is — from peer-reviewed technique to design choices we have not yet validated against loan outcomes.</p>
+    <dl class="meta">
+      <div><dt>System</dt><dd>AgriCred Risk Assessment Engine (SoyFinance)</dd></div>
+      <div><dt>Engine version</dt><dd>v1.1 · document rev. 29 Aug 2026</dd></div>
+      <div><dt>Prepared for</dt><dd>Investor &amp; technical due diligence</dd></div>
+      <div><dt>Scope</dt><dd>The 6-pillar composite score for soybean warehouse-receipt finance</dd></div>
+    </dl>
+  </header>
+
+  <section id="framing">
+    <h2>The one thing to say first</h2>
+    <div class="callout">
+      <span class="eyebrow">Framing that survives scrutiny</span>
+      <p class="say">"The score is an <strong>ordinal risk index (0&ndash;100)</strong>, not a probability of default. The quantitative methods inside it &mdash; Value-at-Risk, volatility, the Cuddy&ndash;Della&nbsp;Valle instability index, the grain-shrink formula &mdash; are established and citable. The pillar weights and scoring thresholds are expert-set priors that we will calibrate against our own repayment data as the book builds. Every score ships with a data-provenance breakdown so you can see how much of it rests on verified inputs."</p>
+    </div>
+    <p class="lead">That framing holds up in a due-diligence room. &ldquo;Our model predicts default probability&rdquo; does not &mdash; not until it has been fitted and backtested against realised outcomes, which requires a closed-loan history the platform does not yet have.</p>
+  </section>
+
+  <section id="reading">
+    <h2>How to read the classification</h2>
+    <p class="lead">Every factor below carries one of four tags. The point of separating them is credibility: naming what is <em>not</em> yet proven is what makes the claims about what <em>is</em> proven believable.</p>
+    <ul class="tiers">
+      <li class="t1">
+        <span class="tag"><span class="num">&#9312;</span><span class="name">Established method</span></span>
+        <p>Peer-reviewed or textbook-standard technique. Citable. Not invented here.</p>
+      </li>
+      <li class="t2">
+        <span class="tag"><span class="num">&#9313;</span><span class="name">Standard practice</span></span>
+        <p>How secured &amp; commodity lenders actually operate, or a factually correct feature of the Indian soybean market.</p>
+      </li>
+      <li class="t3">
+        <span class="tag"><span class="num">&#9314;</span><span class="name">Calibrated heuristic</span></span>
+        <p>The metric is sound; the breakpoints are informed by published ranges; the points assigned are our scoring curve.</p>
+      </li>
+      <li class="t4">
+        <span class="tag"><span class="num">&#9315;</span><span class="name">Design choice</span></span>
+        <p>Our expert judgement. Reasonable, but must be recalibrated against realised loan outcomes.</p>
+      </li>
+    </ul>
+
+    <div class="composition">
+      <span class="eyebrow">Where the ~46 scored factors sit</span>
+      <div class="comp-track" role="img" aria-label="7 established method, 14 standard practice, 9 calibrated heuristic, 16 design choice">
+        <span class="s1" style="width:15.2%">7</span>
+        <span class="s2" style="width:30.4%">14</span>
+        <span class="s3" style="width:19.6%">9</span>
+        <span class="s4" style="width:34.8%">16</span>
+      </div>
+      <div class="comp-key">
+        <span><i style="background:var(--t1)"></i>&#9312; Established &mdash; 7</span>
+        <span><i style="background:var(--t2)"></i>&#9313; Standard practice &mdash; 14</span>
+        <span><i style="background:var(--t3)"></i>&#9314; Calibrated heuristic &mdash; 9</span>
+        <span><i style="background:var(--t4)"></i>&#9315; Design choice &mdash; 16</span>
+      </div>
+    </div>
+    <p class="lead">The <strong>&#9315; design-choice</strong> items concentrate in two places: scoring thresholds, and four data placeholders (flood-risk table, district agro-profiles, monsoon-shock series, borrower bands). The core quantitative machinery is elsewhere &mdash; <strong>Volatility, the highest-weighted pillar at 25%, is entirely tiers &#9312; and &#9314;</strong>.</p>
+  </section>
+
+  <section id="composite">
+    <h2>How the pillars combine</h2>
+    <div class="formula">
+composite = 0.20&middot;PriceLevel + 0.25&middot;Volatility + 0.15&middot;Warehouse<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + 0.15&middot;LTV/Quality + 0.15&middot;CropYield + 0.10&middot;Borrower<br>
+<span class="cm">// each pillar returns 0&ndash;100, higher = riskier</span>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Composite</th><th>Grade</th><th>Decision</th><th>Suggested interest</th></tr></thead>
+        <tbody>
+          <tr><td>&le; 25</td><td>Low</td><td>Auto-approve</td><td>10&ndash;12%</td></tr>
+          <tr><td>&le; 50</td><td>Medium</td><td>Standard review</td><td>13&ndash;15%</td></tr>
+          <tr><td>&le; 75</td><td>Elevated</td><td>Enhanced diligence</td><td>15&ndash;17%</td></tr>
+          <tr><td>&gt; 75</td><td>High</td><td>Reject / additional collateral</td><td>18%+</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="pillars">
+    <h2>The six pillars, factor by factor</h2>
+
+    <!-- PILLAR 1 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 1</span>
+        <h3>Price Level Risk</h3>
+        <span class="pillar-weight"><b>20</b> / 100</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:20%"></div></div>
+      <p class="purpose">Is soybean cheap or expensive right now, and where is it heading?</p>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: MSP distance 30% &middot; forecast trend 35% &middot; 2-yr percentile 20% &middot; change since deposit 15%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">MSP distance as a price-floor signal</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">MSP plus NAFED / state procurement demonstrably acts as a soft floor for soybean mandi prices (CACP price-policy reports). The concept is sound.</td></tr>
+            <tr><td class="factor">MSP breakpoints (0.95&times;, 1.0&times;, 1.1&times;) and points 95/75/40/15</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Our scoring curve.</td></tr>
+            <tr><td class="factor">Forecast-trend sub-score from the ML price forecast</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Using a model forecast as an input is standard; the ensemble itself is standard ML (gradient boosting + random forest + ridge). The &minus;10% / &minus;5% drop thresholds are ours.</td></tr>
+            <tr><td class="factor">Position in the 2-year price range (mean-reversion)</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Percentile / z-score positioning is a standard commodity signal; the 90 / 70 / 30 cutoffs are ours.</td></tr>
+            <tr><td class="factor">Change since deposit price (mark-to-market vs entry)</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Universal in collateral lending. Thresholds ours.</td></tr>
+            <tr><td class="factor">Sub-score weights 30 / 35 / 20 / 15</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Design choice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Data today:</b> live price and 2-yr history are real (mandi API); MSP is a reference table; forecast is model-derived from real prices; deposit price comes from the receipt.</p>
+    </article>
+
+    <!-- PILLAR 2 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 2</span>
+        <h3>Price Volatility Risk</h3>
+        <span class="pillar-weight"><b>25</b> / 100 &middot; largest</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:25%"></div></div>
+      <p class="purpose">How violently does this price move, and how bad could a 90-day drawdown be? &mdash; runs entirely on the real daily price series, which makes it the most trustworthy pillar today.</p>
+      <div class="formula">
+annualised_vol = stdev(daily_returns over 30d) &times; &radic;252<br>
+VaR&#8325;&#8325;(H)&nbsp;&nbsp;&nbsp;&nbsp; = &minus; percentile&#8325;( P&#8348; / P&#8348;&#8331;&#8336; &minus; 1 )&nbsp;&nbsp;<span class="cm">// 5th pct of H-day returns</span><br>
+CDVI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = (&sigma;/&mu; &times; 100) &times; &radic;(1 &minus; R&sup2;)&nbsp;&nbsp;<span class="cm">// detrended instability</span>
+      </div>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: volatility 35% &middot; regime 25% &middot; VaR 25% &middot; CDVI 15%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">Annualised rolling volatility (&sigma; &times; &radic;252)</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">Standard quantitative finance &mdash; &radic;time scaling of volatility, 252 trading days. Hull, <em>Options, Futures and Other Derivatives</em>.</td></tr>
+            <tr><td class="factor">Value-at-Risk, historical simulation, 5th-percentile horizon return</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">One of the three canonical VaR methods. Jorion, <em>Value at Risk</em>; Basel market-risk framework.</td></tr>
+            <tr><td class="factor">Cuddy&ndash;Della&nbsp;Valle Instability Index, CV &times; &radic;(1&minus;R&sup2;)</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">Cuddy &amp; Della&nbsp;Valle (1978), <em>Oxford Bulletin of Economics and Statistics</em>. The most India-agri-economics-credible component &mdash; this exact index runs through the Indian crop area / price / production instability literature.</td></tr>
+            <tr><td class="factor">Coefficient of variation, linear detrending (R&sup2;)</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">Elementary statistics.</td></tr>
+            <tr><td class="factor">Volatility regime vs the series&rsquo; own 25th / 75th percentile</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Percentile-based regime classification is standard; the low / medium / high &rarr; 10 / 40 / 80 mapping is ours.</td></tr>
+            <tr><td class="factor">Breakpoints: vol 15/25/35%, VaR 5/10/20%, CDVI 10/20/35</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Breakpoints informed by what low / medium / high commodity volatility looks like; the point values are our curve.</td></tr>
+            <tr><td class="factor">Sub-score weights 35 / 25 / 25 / 15</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Design choice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Known limitation to disclose:</b> overlapping horizon returns inflate estimator autocorrelation; the &radic;days fallback for short histories assumes i.i.d. returns (no volatility clustering). Standard simplifications a quant reviewer will note.</p>
+    </article>
+
+    <!-- PILLAR 3 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 3</span>
+        <h3>Warehouse &amp; Storage Risk</h3>
+        <span class="pillar-weight"><b>15</b> / 100</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:15%"></div></div>
+      <p class="purpose">Is the collateral actually secure where it is sitting?</p>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: WDRA + registry 30% &middot; insurance 25% &middot; storage duration 20% &middot; collateral manager 15% &middot; location 10%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">WDRA registration / e-NWR as a collateral-quality signal</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Factually correct: WDRA-registered warehouses issue regulated negotiable warehouse receipts through the e-NWR repository; registration materially reduces fraud and quality risk.</td></tr>
+            <tr><td class="factor">Inspection-staleness penalty (&gt; 180d, &gt; 365d)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Reasonable direction; our thresholds.</td></tr>
+            <tr><td class="factor">Insurance: type + validity + coverage ratio (sum insured &divide; market value)</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Coverage-ratio testing is standard in secured lending.</td></tr>
+            <tr><td class="factor">Storage-duration risk rising with time in store</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Directionally correct &mdash; longer storage means more spoilage, shrinkage and price exposure.</td></tr>
+            <tr><td class="factor">Storage-duration breakpoints (60 / 120 / 180d) and points</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Our scoring curve.</td></tr>
+            <tr><td class="factor">Collateral manager present &rarr; lower risk</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Independent collateral management is standard practice in Indian agri-commodity finance since the 2013 NSEL episode.</td></tr>
+            <tr><td class="factor">Location flood-risk lookup table (Indore 20, Ujjain 30, &hellip;)<span class="flag">weakest element</span></td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Hardcoded estimates. Replace with Central Water Commission flood-hazard / district disaster data before diligence. Flag this proactively &mdash; it is 10% of a 15%-weight pillar, i.e. 1.5% of the composite.</td></tr>
+            <tr><td class="factor">Sub-score weights 30 / 25 / 20 / 15 / 10</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Design choice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Data today:</b> currently synthetic in the demo &mdash; now capturable as real via the receipt-intake form (lab slip, e-NWR number, policy).</p>
+    </article>
+
+    <!-- PILLAR 4 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 4</span>
+        <h3>LTV &amp; Quality Risk</h3>
+        <span class="pillar-weight"><b>15</b> / 100</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:15%"></div></div>
+      <p class="purpose">How much cushion between the loan and what the grain is really worth &mdash; after physical losses?</p>
+      <div class="formula">
+shrink%&#8339;&#8338;&#8339;&#8347;&#8348;&#8368;&#8360;&#8337; = (M_wet &minus; M_target) / (100 &minus; M_target) &times; 100&nbsp;&nbsp;<span class="cm">// M_target = 10%</span><br>
+realised_fraction(t) = 1 &minus; 0.5 ^ (days / 30)&nbsp;&nbsp;<span class="cm">// ~30-day equilibration</span><br>
+effective_value_factor = 1 &minus; total_loss% / 100&nbsp;&nbsp;<span class="cm">// discounts collateral value</span>
+      </div>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: initial LTV 30% &middot; live LTV 25% &middot; grade/quality 20% &middot; margin-call distance 15% &middot; shrinkage loss 10%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">Loan-to-value as the primary collateral-risk axis</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Universal in secured lending.</td></tr>
+            <tr><td class="factor">LTV breakpoints (60 / 75 / 85%)</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">~70&ndash;80% is typical for warehouse-receipt finance by Indian banks / NBFCs; our specific bands.</td></tr>
+            <tr><td class="factor">Live (mark-to-market) LTV using the current price</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Standard for commodity-backed lending.</td></tr>
+            <tr><td class="factor">Margin-call distance = (live value &minus; loan) &divide; loan</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Standard repo / commodity-finance concept. Thresholds ours.</td></tr>
+            <tr><td class="factor">Grain moisture-shrink formula (M_wet&minus;M_dry)/(100&minus;M_dry)&times;100</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">Standard grain-trade dry-matter-conservation formula. Purdue University Agronomy Extension, &ldquo;Converting Wet Corn Weight to Dry Corn Weight&rdquo; (cited in code). Correct math, not an approximation.</td></tr>
+            <tr><td class="factor">Safe-storage moisture target ~10%, high-risk &gt; 13%</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Consistent with FCI / NAFED oilseed procurement specs and extension guidance for safe soybean storage.</td></tr>
+            <tr><td class="factor">Moisture-equilibration half-life = 30 days</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Modeling assumption for a WDRA-standard godown, not measured.</td></tr>
+            <tr><td class="factor">Ongoing dry-matter loss 0.15%/mo (good) &ndash; 0.35%/mo (poor)</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Within the range of published post-harvest storage-loss figures (FAO; NABCONS 2015); the good / poor split is our modeling choice.</td></tr>
+            <tr><td class="factor">Quality specs (moisture &le;10, oil &ge;19, protein &ge;38, FM &le;1 = good)</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Broadly consistent with fair-average-quality / soybean trade specs; exact cutoffs and scoring are ours.</td></tr>
+            <tr><td class="factor">Blend of coarse A/B/C grade with lab params (40 : 60)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Design choice.</td></tr>
+            <tr><td class="factor">The shrinkage model as a whole</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">The code states it: &ldquo;a rule-based estimator calibrated to published storage-loss ranges, not a live prediction &hellip; should be replaced with an ML model once real weigh-in / weigh-out records are available.&rdquo; Present it exactly that way.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Data today:</b> LTV inputs from the receipt; live price real; shrinkage from the moisture + days model (rule-based).</p>
+    </article>
+
+    <!-- PILLAR 5 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 5</span>
+        <h3>Crop Yield &amp; Weather Risk</h3>
+        <span class="pillar-weight"><b>15</b> / 100</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:15%"></div></div>
+      <p class="purpose">Is the surrounding crop situation about to move the price or the supply?</p>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: yield instability 30% &middot; yield trend 20% &middot; rainfall risk 25% &middot; seasonal crop-cycle 25%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">Yield instability via CDVI</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">The same Cuddy&ndash;Della&nbsp;Valle index; crop yield / production instability is its most common textbook application.</td></tr>
+            <tr><td class="factor">Yield trend via linear regression</td><td class="basis"><span class="chip t1">&#9312;</span></td><td class="note">Standard. The improving / stable / declining &rarr; 20 / 50 / 80 mapping is ours.</td></tr>
+            <tr><td class="factor">Rainfall deviation from normal (LPA) as a yield-risk driver</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Standard agro-meteorology; IMD publishes actual-vs-LPA departures routinely. The engine accepts a real IMD figure in place of the synthetic one.</td></tr>
+            <tr><td class="factor">Kharif seasonality (sow Jun&ndash;Sep, harvest Oct&ndash;Nov, crop-stage risk)</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Factually correct for Indian soybean; the seasonal sub-score uses the real calendar date.</td></tr>
+            <tr><td class="factor">DISTRICT_PROFILES (normal rainfall, base yield, trend per district)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Synthetic baseline values for demo-data generation &mdash; <em>not</em> real district statistics. Replace with Directorate of Economics &amp; Statistics district data.</td></tr>
+            <tr><td class="factor">Synthetic monsoon-shock series (2015: &minus;18%, &hellip;)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Illustrative, not sourced IMD departures.</td></tr>
+            <tr><td class="factor">Sub-score weights 30 / 20 / 25 / 25</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Design choice.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Data today:</b> rainfall can be real (fetch wired, API response schema still to be verified on a live host); yield history is synthetic.</p>
+    </article>
+
+    <!-- PILLAR 6 -->
+    <article class="pillar">
+      <div class="pillar-head">
+        <span class="pillar-num">PILLAR 6</span>
+        <h3>Borrower Credit Risk</h3>
+        <span class="pillar-weight"><b>10</b> / 100 &middot; smallest</span>
+      </div>
+      <div class="weight-track"><div class="weight-fill" style="width:10%"></div></div>
+      <p class="purpose">Does the borrower's own track record support the loan?</p>
+      <div class="tbl-scroll">
+        <table>
+          <caption>Sub-score weights: success rate 30% &middot; tenure 20% &middot; KYC 20% &middot; FPO member 15% &middot; default history 15%</caption>
+          <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+          <tbody>
+            <tr><td class="factor">Repayment success rate, tenure, KYC, default history as credit factors</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Generic, universally-used credit factors.</td></tr>
+            <tr><td class="factor">FPO membership &rarr; lower risk</td><td class="basis"><span class="chip t2">&#9313;</span></td><td class="note">Reasonable domain signal &mdash; aggregation, extension support, group accountability.</td></tr>
+            <tr><td class="factor">All scoring bands (&gt; 95%, &ge; 80%, &hellip;) and points</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Generic scorecard-style heuristics &mdash; <em>not</em> a statistically fitted scorecard. Needs a real default dataset to become a validated model.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="datatoday"><b>Data today:</b> synthetic until the platform has its own borrower repayment ledger.</p>
+    </article>
+  </section>
+
+  <section id="decision">
+    <h2>Composite &amp; decision layer</h2>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Factor</th><th>Basis</th><th>Source / note</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Pillar weights 25 / 20 / 15 / 15 / 15 / 10<span class="flag">biggest single design item</span></td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Expert-set priors. Not data-derived. Recalibrate against realised outcomes (regularised logistic regression / gradient boosting on repaid-vs-defaulted) once ~100&ndash;200 loans have closed.</td></tr>
+          <tr><td class="factor">Linear weighted sum of pillar scores</td><td class="basis"><span class="chip t3">&#9314;</span></td><td class="note">Standard first-order aggregation; assumes the pillars are roughly independent and risk is additive. Reasonable to start; real defaults may show interaction effects.</td></tr>
+          <tr><td class="factor">Grade cutoffs (25 / 50 / 75)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Product decision.</td></tr>
+          <tr><td class="factor">Interest bands (10&ndash;12% &hellip; 18%+)</td><td class="basis"><span class="chip t4">&#9315;</span></td><td class="note">Commercial / pricing decision, not a model output.</td></tr>
+          <tr><td class="factor">Score is ordinal, not a probability of default</td><td class="basis">&mdash;</td><td class="note">Critical disclosure. It ranks risk for approve / price / decline; it does not yet estimate loss probability.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="underwriting">
+    <h2>Underwriting &amp; verification &mdash; borrower financial data</h2>
+    <p class="lead">The methodology above governs the score. This section governs its <em>inputs</em>: for each fact about a borrower's finances, which document establishes it and how it is checked against an independent source of truth. The test an investor applies is one question &mdash; <strong>is each number machine-verified against a registry, or self-declared?</strong></p>
+
+    <h3 class="subhead">Verification strength</h3>
+    <p class="note-line">A separate axis from the &#9312;&ndash;&#9315; tiers above. That scale rated how established a <em>method</em> is; this one rates how an <em>input</em> is confirmed.</p>
+    <ul class="tiers">
+      <li class="v-mach">
+        <span class="tag"><span class="dot">&#9679;</span><span class="name">Machine-verified</span></span>
+        <p>Checked against a government, bureau or registry API. The borrower cannot fake it.</p>
+      </li>
+      <li class="v-inst">
+        <span class="tag"><span class="dot">&#9679;</span><span class="name">Institution-sourced</span></span>
+        <p>Data arrives signed from the bank itself via the Account Aggregator framework &mdash; not a borrower upload.</p>
+      </li>
+      <li class="v-3p">
+        <span class="tag"><span class="dot">&#9679;</span><span class="name">Third-party verified</span></span>
+        <p>An accredited external party attests: KYC vendor, NABL lab, insurer, FPO.</p>
+      </li>
+      <li class="v-self">
+        <span class="tag"><span class="dot">&#9679;</span><span class="name">Self-declared + audited</span></span>
+        <p>Borrower states it; sample-checked and cross-referenced. Never the sole basis for a lending number.</p>
+      </li>
+    </ul>
+
+    <h3 class="subhead">Identity &mdash; the foundation</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Establishes</th><th>Verification &amp; source of truth</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Aadhaar</td><td class="note">Identity + address</td><td class="note">UIDAI eKYC (OTP) via a licensed KUA, or DigiLocker / offline XML. Stored masked to last 4.</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">PAN</td><td class="note">Tax identity; links bureau + bank</td><td class="note">PAN verification API (Protean / NSDL) &mdash; name + status match</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Photo + liveness</td><td class="note">The person matches the document</td><td class="note">Video-KYC / selfie + liveness, face-match to the Aadhaar photo (Hyperverge / Signzy / IDfy)</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">Mobile number</td><td class="note">Contactability, line vintage</td><td class="note">OTP + mobile-age / Aadhaar-link check</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Name / DOB consistency</td><td class="note">No identity stitching</td><td class="note">Auto cross-check Aadhaar &harr; PAN &harr; bank; any mismatch &rarr; manual review</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Banking &amp; cash-flow</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Establishes</th><th>Verification &amp; source of truth</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Bank account (cancelled cheque / passbook)</td><td class="note">Account ownership</td><td class="note"><b>Penny-drop</b> &mdash; &#8377;1 credit, read back the registered holder name, match to PAN</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Bank statement, 6&ndash;12 months</td><td class="note">Real cash-flow, obligations, conduct</td><td class="note"><b>Account Aggregator</b> (RBI framework &mdash; Finvu / OneMoney / CAMS). Statement signed by the bank; tamper-proof. This is the line that reassures a lender's investors.</td><td class="basis"><span class="chip t2">Bank&middot;AA</span></td></tr>
+          <tr><td class="factor">&mdash; fallback</td><td class="note">Same</td><td class="note">Net-banking fetch (Perfios / Finbox). PDF accepted only if digitally signed and passed through a tamper-check analyzer.</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">Derived conduct metrics</td><td class="note">Repayment capacity &amp; discipline</td><td class="note">Analyzer output: average balance, inflow regularity, mandi-payment credits, cheque/ACH bounces, existing EMI debits, min-balance breaches, circular transactions</td><td class="basis"><em>derived</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Existing credit &amp; obligations</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Establishes</th><th>Verification &amp; source of truth</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Credit bureau report</td><td class="note">All formal borrowing, DPD history, defaults</td><td class="note">Pulled by the lender (with consent) direct from <b>CRIF High Mark</b> (best rural / JLG / MFI coverage), CIBIL, Equifax or Experian. Borrower cannot alter it.</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">&mdash; fields read from it</td><td class="note">&mdash;</td><td class="note">Bureau score, active loans + outstanding, KCC limit &amp; utilisation, 24&ndash;36 month DPD, write-offs, settlements, <b>suit-filed / wilful-default flags</b>, enquiry velocity</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">KCC sanction letter</td><td class="note">Crop credit limit, NPA status</td><td class="note">Cross-check against bureau + bank statement</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">GST returns (if registered &mdash; aggregators / traders)</td><td class="note">Turnover, filing regularity</td><td class="note">GSTN API</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Sanction letters for any loan not clean in the bureau</td><td class="note">True EMI outflow</td><td class="note">Manual reconcile vs bank debits</td><td class="basis"><span class="chip t4">Self-decl</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Income &amp; repayment capacity</h3>
+    <p class="note-line">Farmer income is lumpy and largely informal, so it is triangulated from land, sales and banking rather than taken from any single document.</p>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Establishes</th><th>Verification &amp; source of truth</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Land record (RoR / 7-12 / Khasra-Khatauni / patta)</td><td class="note">Production capacity; ownership</td><td class="note">State land-record portal (Mahabhulekh, MP Bhulekh &hellip;) / DILRMP &mdash; match survey number, owner name, area, crop entry</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Mandi sale receipts / e-NAM history / APMC gate passes</td><td class="note">Actual crop sales &amp; realisation</td><td class="note">e-NAM / Agmarknet records where accessible; reconcile amounts against bank credits</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">PMFBY crop-insurance enrolment</td><td class="note">Crop is insured; confirms sown area / crop</td><td class="note">PMFBY portal</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">FPO membership certificate</td><td class="note">Farmer status; often co-guarantee</td><td class="note">FPO attests as an institution (membership, land, typical volumes)</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">Household income / other income / dependents</td><td class="note">Full obligation picture</td><td class="note">Self-declared; sanity-checked against bank inflows</td><td class="basis"><span class="chip t4">Self-decl</span></td></tr>
+          <tr><td class="factor">Income estimate + FOIR</td><td class="note">Can they service this loan</td><td class="note">Derived: land area &times; district yield &times; price, reconciled to bank + mandi receipts. FOIR = total obligations &divide; income, with a hard ceiling.</td><td class="basis"><em>derived</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">The collateral (verify before disbursing)</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Establishes</th><th>Verification &amp; source of truth</th><th>Strength</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Warehouse receipt / e-NWR</td><td class="note">The grain exists, is theirs, is not already pledged</td><td class="note"><b>WDRA e-NWR repository</b> &mdash; number live, matches commodity + quantity + depositor, <b>no existing lien</b> (blocks double-financing)</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+          <tr><td class="factor">Warehouseman's insurance policy</td><td class="note">Collateral is insured</td><td class="note">Confirm with insurer / broker: sum insured &ge; value, valid through loan tenure, covers fire + burglary + flood</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">Quality / assay certificate</td><td class="note">Grade + lab parameters</td><td class="note">Issued by a NABL-accredited / empanelled assayer on the approved list; signed &amp; stamped</td><td class="basis"><span class="chip t3">3rd-party</span></td></tr>
+          <tr><td class="factor">Tripartite storage agreement + collateral-manager empanelment</td><td class="note">Custody chain</td><td class="note">Executed copy on file</td><td class="basis"><span class="chip t4">Self-decl</span></td></tr>
+          <tr><td class="factor">Lien marked on the e-NWR</td><td class="note">Receipt pledged to the lender</td><td class="note">Confirm in the repository <b>before</b> disbursement</td><td class="basis"><span class="chip t1">Machine</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Consent &amp; mandate &mdash; what makes the file defensible</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Artefact</th><th>Why an investor / auditor cares</th></tr></thead>
+        <tbody>
+          <tr><td class="factor">Signed loan application + KFS (Key Fact Statement)</td><td class="note">RBI-mandated APR / fee disclosure</td></tr>
+          <tr><td class="factor">e-Sign / Aadhaar signature on the loan agreement + DPN</td><td class="note">Legally valid, timestamped</td></tr>
+          <tr><td class="factor">Consent artefacts for every pull &mdash; bureau, AA handle, eKYC &mdash; with timestamp + IP</td><td class="note">Regulator and investor auditor will ask for these first</td></tr>
+          <tr><td class="factor">e-NACH / NACH mandate</td><td class="note">Repayment auto-debit; verify registered and active</td></tr>
+          <tr><td class="factor">Geo-tagged, timestamped photos &mdash; borrower at the warehouse, stored stock</td><td class="note">Physical-verification proof; anti-fraud</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="subhead">Fraud &amp; negative checks (every application)</h3>
+    <ul class="cites">
+      <li><span class="src">Dedupe against your own defaulter / fraud lists</span><br><span class="use">Aadhaar / PAN / mobile / bank account / device hash</span></li>
+      <li><span class="src">Name screening</span><br><span class="use">RBI wilful-defaulter list, CIBIL suit-filed, sanctions lists</span></li>
+      <li><span class="src">Device &amp; location intelligence</span><br><span class="use">Application device fingerprint, GPS at application vs stated village, shared-attribute clusters across applications</span></li>
+      <li><span class="src">Document tamper checks</span><br><span class="use">Metadata / EXIF, PDF digital signature, font &amp; hash anomalies on any upload</span></li>
+    </ul>
+
+    <h3 class="subhead">The loan file a diligence team will sample</h3>
+    <p class="note-line">For any loan picked at random, this bundle exists and every number is independently re-verifiable.</p>
+    <ol class="road">
+      <li><div><strong>KYC pack</strong><p>Aadhaar eKYC result, PAN verification result, video-KYC + face-match score.</p></div></li>
+      <li><div><strong>Penny-drop result + bank statement</strong><p>AA-sourced, stored with the consent handle.</p></div></li>
+      <li><div><strong>Credit bureau report (raw) + score decision</strong><p>The pulled report and how it fed the borrower pillar.</p></div></li>
+      <li><div><strong>Land record extract + income-estimate worksheet + FOIR calc</strong><p>From the state portal, with the triangulation shown.</p></div></li>
+      <li><div><strong>e-NWR verification response + lien-marking confirmation</strong><p>Proof the collateral is real and pledged.</p></div></li>
+      <li><div><strong>Insurance policy + assay certificate + approved-vendor check</strong><p>Coverage and quality, from empanelled parties.</p></div></li>
+      <li><div><strong>Signed agreement + KFS + DPN + NACH mandate + all consent artefacts</strong><p>Every one timestamped.</p></div></li>
+      <li><div><strong>Fraud / negative-check results</strong><p>Dedupe, screening, device intelligence.</p></div></li>
+      <li><div><strong>Six-pillar risk vector at origination + final grade + officer notes</strong><p>The decision, reproducible.</p></div></li>
+      <li><div><strong>Outcome record</strong><p>Repaid / late / defaulted / auctioned + recovery %. Populated as the loan closes &mdash; this is the calibration label for the whole engine.</p></div></li>
+    </ol>
+
+    <h3 class="subhead">Minimum to launch vs. full</h3>
+    <div class="callout">
+      <span class="eyebrow">Every loan, no exceptions</span>
+      <p>Aadhaar eKYC &middot; PAN verify &middot; penny-drop &middot; Account-Aggregator bank statement &middot; credit bureau &middot; land record <em>or</em> FPO-verified status &middot; e-NWR verification + lien &middot; insurance + assay &middot; signed agreement + consent + NACH &middot; negative-list check.</p>
+      <span class="eyebrow">Add as you scale</span>
+      <p>GST returns &middot; e-NAM sale history &middot; PMFBY cross-check &middot; satellite land / crop verification &middot; device intelligence &middot; JLG group data.</p>
+    </div>
+
+    <div class="callout">
+      <span class="eyebrow">The investor headline</span>
+      <p class="say">"Ten of the twelve material inputs are machine-verified against a government, bureau, bank or registry source. Nothing that moves the lending decision is self-declared. Every loan file is independently reproducible from stored consent artefacts."</p>
+    </div>
+  </section>
+
+  <section id="challenges">
+    <h2>What due diligence will challenge &mdash; and the answer</h2>
+    <div class="qa">
+      <div class="qa-item">
+        <div class="q"><span class="eyebrow">Challenge</span><p>&ldquo;The weights and thresholds are arbitrary.&rdquo;</p></div>
+        <div class="a"><span class="eyebrow">Response</span><p>They are expert-set priors, disclosed as such. Every threshold is a named constant; we recalibrate against our own repayment data. The methods &mdash; VaR, CDVI, the shrink formula &mdash; are established and citable.</p></div>
+      </div>
+      <div class="qa-item">
+        <div class="q"><span class="eyebrow">Challenge</span><p>&ldquo;0&ndash;100 isn't a probability.&rdquo;</p></div>
+        <div class="a"><span class="eyebrow">Response</span><p>Correct, and we don't claim it is. It is an ordinal risk index for approve / price / decline decisions. PD calibration comes after we have realised outcomes.</p></div>
+      </div>
+      <div class="qa-item">
+        <div class="q"><span class="eyebrow">Challenge</span><p>&ldquo;Where's the backtest?&rdquo;</p></div>
+        <div class="a"><span class="eyebrow">Response</span><p>Not yet &mdash; the book is pre-origination. The volatility / VaR pillar can be backtested against historical price drawdowns today; the composite needs loan outcomes. The validation plan and the data it requires are below.</p></div>
+      </div>
+      <div class="qa-item">
+        <div class="q"><span class="eyebrow">Challenge</span><p>&ldquo;Half the inputs are synthetic.&rdquo;</p></div>
+        <div class="a"><span class="eyebrow">Response</span><p>Yes &mdash; and the product shows which ones, per pillar, via the provenance panel. A real lot scores ~85&ndash;97% verified; a demo lot ~20%. We are not hiding it.</p></div>
+      </div>
+      <div class="qa-item">
+        <div class="q"><span class="eyebrow">Challenge</span><p>&ldquo;The flood-risk table is hardcoded.&rdquo;</p></div>
+        <div class="a"><span class="eyebrow">Response</span><p>Acknowledged &mdash; it is a placeholder. Central Water Commission flood-hazard data is the replacement. It is 10% of a 15%-weight pillar: 1.5% of the composite.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Path from index to validated model</h2>
+    <ol class="road">
+      <li><div><strong>Backtest the volatility / VaR pillar now.</strong><p>Historical soybean price data already supports it &mdash; compare predicted VaR against realised 90-day drawdowns.</p></div></li>
+      <li><div><strong>Log every origination.</strong><p>Store the six-pillar vector plus the eventual outcome: repaid, margin-called, defaulted, and recovery %.</p></div></li>
+      <li><div><strong>Refit weights at ~150 closed loans.</strong><p>Regularised logistic regression on repaid-vs-defaulted; compare the fitted weights to the expert priors and report the drift.</p></div></li>
+      <li><div><strong>Calibrate the composite to a real PD curve.</strong><p>Publish a reliability diagram so a given score maps to an observed loss rate.</p></div></li>
+      <li><div><strong>Replace the four data placeholders.</strong><p>Flood table &rarr; CWC data; district profiles &rarr; DES statistics; monsoon series &rarr; IMD departures; borrower bands &rarr; fitted scorecard.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="citations">
+    <h2>Citations to keep on hand</h2>
+    <ul class="cites">
+      <li><span class="src">Cuddy, J.D.A. &amp; Della&nbsp;Valle, P.A. (1978). &ldquo;Measuring the instability of time series data.&rdquo; <em>Oxford Bulletin of Economics and Statistics</em>, 40(1).</span><br><span class="use">CDVI instability index &mdash; Pillars 2 and 5.</span></li>
+      <li><span class="src">Hull, J. <em>Options, Futures, and Other Derivatives.</em></span><br><span class="use">Volatility annualisation (&radic;252 scaling).</span></li>
+      <li><span class="src">Jorion, P. <em>Value at Risk: The New Benchmark for Managing Financial Risk.</em></span><br><span class="use">Historical-simulation VaR &mdash; Pillar 2.</span></li>
+      <li><span class="src">Purdue University Agronomy Extension &mdash; grain moisture-shrink / wet-to-dry weight conversion.</span><br><span class="use">Shrinkage model &mdash; Pillar 4.</span></li>
+      <li><span class="src">NABCONS (2015). &ldquo;Study on Post-Harvest Losses,&rdquo; Ministry of Agriculture, Government of India.</span><br><span class="use">Storage dry-matter-loss ranges &mdash; Pillar 4.</span></li>
+      <li><span class="src">Warehousing Development and Regulatory Authority (WDRA) &mdash; negotiable warehouse receipts / e-NWR framework.</span><br><span class="use">Warehouse quality signal &mdash; Pillar 3.</span></li>
+      <li><span class="src">Commission for Agricultural Costs &amp; Prices (CACP) &mdash; price-policy reports.</span><br><span class="use">MSP and procurement floor effect &mdash; Pillar 1.</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>This document describes methodology as implemented in AgriCred Risk Engine v1.1. Scores are an ordinal risk index, not a probability of default and not investment advice. Factors marked &#9315; are unvalidated design choices subject to change as loan-outcome data accumulates.</p>
+  </footer>
+
+</div>

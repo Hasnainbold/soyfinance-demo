@@ -5,3 +5,24 @@ numpy==2.2.6
 openpyxl==3.1.5
 requests==2.32.3
 urllib3==2.4.0
+scikit-learn==1.6.1
+scipy>=1.11.0
+pdfplumber>=0.11
+rapidfuzz>=3.0
+
+
+
+
+
+Profile 
+--KYC
+--PAN
+--CIBIL Score
+--BANK stamenent 
+--bussiness ke prfile
+--land record 
+--we need to idenfify crop ke liye invoice kya kya le rahi hai
+
+--e mandi
+--
+

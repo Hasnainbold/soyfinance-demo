@@ -1,0 +1,26 @@
+Company/LLP Master Data
+CIN	U01403MH2018PTC300001
+Company Name	LATUR SOYA FARMERS PRODUCER COMPANY LIMITED
+ROC Name	RoC-Mumbai
+Registration Number	300001
+Date of Incorporation	14/08/2018
+Email Id	info@example.com
+Registered Address	At post Chakur, Tal Chakur, Dist Latur, Maharashtra 413513
+Listed in Stock Exchange(s) (Y/N)	No
+Category of Company	Company limited by shares
+Subcategory of the Company	Non-govt company
+Class of Company	Private
+Company Status	Active
+Authorised Capital (Rs)	10,00,000
+Paid up Capital (Rs)	7,42,000
+Date of last AGM	28/09/2025
+Date of Balance Sheet	31/03/2025
+
+Directors/Signatory Details
+Sr. No	DIN/PAN	Name	Designation	Date of Appointment
+1	08700001	RAMESH PATIL	Director	14/08/2018
+2	08700002	SUNITA JADHAV	Director	14/08/2018
+3	08700003	ANIL MORE	Director	14/08/2018
+4	08700004	KAVITA SHINDE	Director	01/04/2021
+5	08700005	VIJAY PAWAR	Director	01/04/2021
+6	ABCPD1234E	SANJAY DESHPANDE	CEO	01/06/2019

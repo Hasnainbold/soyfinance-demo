@@ -1,0 +1,49 @@
+
+M  soybean_meal
+   25 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 20
+   |ret|>5% days   raw  13   adjusted   5
+   ann. vol        raw  21.2%  adjusted  18.2%
+   wrote data_real\china_dce\soybean_meal_continuous_adjusted.csv
+
+Y  soybean_oil
+   25 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 20
+   |ret|>5% days   raw  11   adjusted   7
+   ann. vol        raw  21.8%  adjusted  20.6%
+   wrote data_real\china_dce\soybean_oil_continuous_adjusted.csv
+
+A  soybean_no1
+   50 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 31
+   |ret|>5% days   raw   5   adjusted   1
+   ann. vol        raw  17.5%  adjusted  15.9%
+   wrote data_real\china_dce\soybean_no1_continuous_adjusted.csv
+
+B  soybean_no2
+   50 contracts with data
+   1,555 days  2019-12-10 -> 2026-09-04   rolls: 33
+   |ret|>5% days   raw  16   adjusted   7
+   ann. vol        raw  23.4%  adjusted  20.7%
+   wrote data_real\china_dce\soybean_no2_continuous_adjusted.csv
+
+P  palm_oil
+   25 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 20
+   |ret|>5% days   raw  35   adjusted  27
+   ann. vol        raw  29.2%  adjusted  27.3%
+   wrote data_real\china_dce\palm_oil_continuous_adjusted.csv
+
+C  corn
+   25 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 20
+   |ret|>5% days   raw   2   adjusted   0
+   ann. vol        raw  11.7%  adjusted  10.8%
+   wrote data_real\china_dce\corn_continuous_adjusted.csv
+
+RM  rapeseed_meal
+   25 contracts with data
+   1,641 days  2019-12-02 -> 2026-09-04   rolls: 21
+   |ret|>5% days   raw  18   adjusted  13
+   ann. vol        raw  26.7%  adjusted  23.9%
+   wrote data_real\china_dce\rapeseed_meal_continuous_adjusted.csv

@@ -1,0 +1,74 @@
+================================================================================
+  SAMPLE / DUMMY DOCUMENT -- FOR FORMAT REFERENCE ONLY
+  This is NOT a real government record. All names, numbers, and villages
+  below are fictitious, invented purely to show the FIELD LAYOUT of a real
+  Madhya Pradesh "Khasra / Khatauni B-1" record so we can design our intake form.
+================================================================================
+
+                  MADHYA PRADESH LAND RECORDS
+              खसरा / खतौनी बी-1 (Khasra / Khatauni B-1)
+        [ Downloaded from mpbhulekh.gov.in (WebGIS 2.0) -- SAMPLE ]
+
+--------------------------------------------------------------------------------
+जिला (District)         : Indore
+तहसील (Tehsil)          : Depalpur
+ग्राम (Village)          : Chirakhan
+खसरा क्रमांक (Khasra no.) : 318/1
+--------------------------------------------------------------------------------
+
+KHASRA -- PLOT-LEVEL RECORD
+--------------------------------------------------------------------------------
+भूमिस्वामी का नाम (Bhumiswami / Owner)  : Suresh s/o Kailash Chandra Verma
+रकबा (Area)                            : 2.023 Hectare
+भूमि की किस्म (Soil class)             : Kharaba/Middle (medium soil quality)
+सिंचाई का साधन (Irrigation source)     : Tube well
+वर्तमान फसल (Current crop)             : Soyabean (सोयाबीन)  -- Kharif 2026
+
+KHATAUNI B-1 -- CONSOLIDATED HOLDING + LOAN RECORD
+   (भू-अधिकार एवं ऋण पुस्तिका -- literally "Land Rights AND Loan Booklet")
+--------------------------------------------------------------------------------
+कुल रकबा (Total holding, all khasras)   : 4.86 Hectare  (across 3 khasra numbers)
+भू-अधिकार का प्रकार (Right type)        : Bhumiswami (full ownership)
+ऋण भार (Existing loan/charge recorded)  : Nil
+    [ Unlike Maharashtra, MP's B-1 record is BUILT to show bank loans against
+      this land directly -- e.g. "Union Bank of India KCC limit Rs.1,50,000,
+      sanctioned 15/03/2025" would appear right here if one exists ]
+नामांतरण आदेश (Mutation order no.)      : 2231/2018, dated 11/04/2018
+
+--------------------------------------------------------------------------------
+दिनांक (Date printed)  : 05/09/2026      पटवारी हस्ताक्षर (Patwari signature): [seal]
+--------------------------------------------------------------------------------
+
+================================================================================
+FIELDS WE WOULD ACTUALLY NEED TO CAPTURE FOR OUR PLATFORM
+================================================================================
+  district, tehsil, village                -> matches our "location" field
+  khasra_number                            -> unique land identifier (MP's
+                                                equivalent of survey number)
+  owner_name (bhumiswami)                  -> match against borrower's KYC name
+  right_type (bhumiswami vs other)         -> bhumiswami = full/clean ownership
+  area_hectares (this khasra + total)      -> land size; MP shows BOTH the single
+                                                plot AND the farmer's total holding
+                                                across all plots -- useful for
+                                                sizing a fair loan limit
+  soil_class + irrigation_source           -> yield-risk profile input
+  current_crop + season                    -> should match the financed crop
+  existing_loan_charge  ("ऋण भार")          -> CRITICAL, and easier to check than
+                                                Maharashtra: MP's B-1 record is
+                                                *designed* to show existing bank
+                                                loans against this exact land --
+                                                the single strongest anti-fraud
+                                                field for preventing the same
+                                                land being pledged twice
+  mutation_order_number + date              -> same fraud-pattern check as
+                                                Maharashtra (recent transfer
+                                                right before a loan application)
+================================================================================
+
+KEY DIFFERENCE FROM MAHARASHTRA, worth remembering:
+  MP's B-1 record is LITERALLY named "Land Rights and Loan Booklet" -- it is
+  purpose-built by the state to show existing loans against land. Maharashtra's
+  7/12 records this too, but MP's format foregrounds it more explicitly. If we
+  ever build a real "double-pledge" fraud check, MP's format gives us a cleaner
+  single field to parse.
+================================================================================

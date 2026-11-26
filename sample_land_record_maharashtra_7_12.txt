@@ -1,0 +1,68 @@
+================================================================================
+  SAMPLE / DUMMY DOCUMENT -- FOR FORMAT REFERENCE ONLY
+  This is NOT a real government record. All names, numbers, and villages
+  below are fictitious, invented purely to show the FIELD LAYOUT of a real
+  Maharashtra "7/12 Extract" (Satbara Utara) so we can design our intake form.
+================================================================================
+
+                    MAHARASHTRA LAND RECORDS
+                  गाव नमुना ७ आणि १२ (Village Form 7 & 12)
+              [ Downloaded from mahabhulekh.maharashtra.gov.in -- SAMPLE ]
+
+--------------------------------------------------------------------------------
+जिल्हा (District)       : Latur
+तालुका (Taluka)         : Ausa
+गाव (Village)           : Kharola  (सर्कल/Circle: Ausa)
+गट क्रमांक / भूमापन क्र. : 142/2      (Gat/Survey Number)
+--------------------------------------------------------------------------------
+
+FORM 7 -- OWNERSHIP & RIGHTS  (मालकी हक्क)
+--------------------------------------------------------------------------------
+भोगवटादार वर्ग (Tenure class)        : Class I (Occupant, full ownership rights)
+खातेदाराचे नाव (Owner / Khatedar)     : Ramesh Bhagwan Patil
+                                        (co-owner: Sunanda Ramesh Patil)
+क्षेत्र (Area)                        : 1 Hectare 42 Ares  (=  3.51 acres)
+जमिनीचा प्रकार (Land type)           : Jirayat (rain-fed) / Bagayat (irrigated): Jirayat
+इतर हक्क (Other rights / burdens)     : ------
+बोजा / कर्ज नोंद (Encumbrance/loan)   : Nil
+    [ If a bank loan is already registered against this land, it appears
+      here -- e.g. "State Bank of India, crop loan Rs.1,20,000, dt. 12/06/2024" ]
+फेरफार क्रमांक (Mutation entry no.)   : 4587, dated 03/09/2019
+
+FORM 12 -- CULTIVATION / CROP  (पिकाची नोंद)
+--------------------------------------------------------------------------------
+हंगाम (Season)                        : Kharif 2026
+पिकाचे नाव (Crop grown)               : Soyabean (सोयाबीन)
+पिकाखालील क्षेत्र (Area under crop)    : 1.40 Hectare
+सिंचनाचा स्त्रोत (Irrigation source)   : Rain-fed (well/canal if irrigated)
+कोणी लागवड केली (Cultivator, if not
+    the owner -- e.g. tenant farmer)   : Self (owner-cultivated)
+
+--------------------------------------------------------------------------------
+दिनांक (Date printed)  : 05/09/2026        अधिकृत स्वाक्षरी (Authorised sign): [Talathi seal]
+--------------------------------------------------------------------------------
+
+================================================================================
+FIELDS WE WOULD ACTUALLY NEED TO CAPTURE FOR OUR PLATFORM
+================================================================================
+  district, taluka, village                -> matches our "location" field
+  survey_number (gat_kramank)               -> unique land identifier
+  owner_name (+ co-owners)                  -> match against borrower's KYC name
+  tenure_class                              -> Class I = clean ownership;
+                                                Class II/govt land = restricted,
+                                                usually can't be pledged
+  area_hectares                             -> land size (cross-check vs. declared
+                                                crop quantity -- flags impossible yields)
+  land_type (jirayat/bagayat)               -> rain-fed vs irrigated = different
+                                                yield-risk profile
+  existing_encumbrance                      -> CRITICAL: if a bank loan is ALREADY
+                                                registered here, this land can't
+                                                be pledged again (double-financing
+                                                fraud check)
+  crop_grown + season                       -> should match the crop being financed
+                                                (a soybean loan on land recorded as
+                                                growing wheat = red flag)
+  mutation_number + date                    -> ownership transfer history; a very
+                                                recent mutation just before a loan
+                                                application is a known fraud pattern
+================================================================================

@@ -1,0 +1,23 @@
+=== CEDA monthly coverage 2025-01 -> 2026-09 ===
+  2025-01   31 rows  last 2025-01-31
+  2025-02  HTTP500
+  2025-03   31 rows  last 2025-03-31
+  2025-04   30 rows  last 2025-04-30
+  2025-05   31 rows  last 2025-05-31
+  2025-06   30 rows  last 2025-06-30
+  2025-07   31 rows  last 2025-07-31
+  2025-08   31 rows  last 2025-08-31
+  2025-09   30 rows  last 2025-09-30
+  2025-10   30 rows  last 2025-10-30
+  2025-11    0 rows  EMPTY
+  2025-12    0 rows  EMPTY
+  2026-01    0 rows  EMPTY
+  2026-02    0 rows  EMPTY
+  2026-03    0 rows  EMPTY
+  2026-04    0 rows  EMPTY
+  2026-05    0 rows  EMPTY
+  2026-06    0 rows  EMPTY
+  2026-07    0 rows  EMPTY
+  2026-08    0 rows  EMPTY
+  2026-09    0 rows  EMPTY
+DONE
