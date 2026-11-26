@@ -162,7 +162,7 @@ st.markdown("""
     }
     .kpi:hover { border-color:rgba(16,185,129,.35); transform:translateY(-3px); }
     .kpi-label { font-size:.72rem; font-weight:600; letter-spacing:.09em;
-                 color:#475569; text-transform:uppercase; margin-bottom:8px; }
+                 color:#94a3b8; text-transform:uppercase; margin-bottom:8px; }
     .kpi-val { font-size:1.9rem; font-weight:800; color:#f8fafc; line-height:1; }
     .kpi-sub { font-size:.8rem; margin-top:6px; }
     .g{color:#10b981;}.r{color:#ef4444;}.bl{color:#3b82f6;}.pu{color:#a855f7;}.am{color:#f59e0b;}
@@ -1667,14 +1667,14 @@ elif page == "🌾 Soybean Intelligence":
         Indian Soybean Mandi Prices &nbsp;·&nbsp;
         <strong style="color:#e2e8f0;">{sel_str_si}</strong> &nbsp;·&nbsp;
         <span style="color:#64748b;">{sel_day_si}</span>
-        {f"&nbsp;·&nbsp; <span style='color:#475569;'>{si_state}</span>" if si_state != 'All States' else ''}
+        {f"&nbsp;·&nbsp; <span style='color:#94a3b8;'>{si_state}</span>" if si_state != 'All States' else ''}
       </div>
     </div>""", unsafe_allow_html=True)
 
     # ── Source bar
     hist_lbl_si = hist_source  # Already set from the real data loading logic above
     st.markdown(f"""
-    <div style="text-align:right;font-size:.78rem;color:#475569;margin-bottom:12px;">
+    <div style="text-align:right;font-size:.78rem;color:#94a3b8;margin-bottom:12px;">
       <strong style="color:{'#10b981' if is_today and price_ok else '#3b82f6'}">{src_si}</strong>
       &nbsp;·&nbsp; {len(si_mandi)} mandis
       &nbsp;·&nbsp; Chart: {hist_lbl_si}
@@ -1689,7 +1689,7 @@ elif page == "🌾 Soybean Intelligence":
         st.markdown(f"""<div class="kpi">
           <div class="kpi-label">📅 Viewing Date</div>
           <div class="kpi-val" style="font-size:1.3rem;">{selected_date.strftime("%d %b %Y")}</div>
-          <div class="kpi-sub" style="color:#475569;">{sel_day_si}</div>
+          <div class="kpi-sub" style="color:#94a3b8;">{sel_day_si}</div>
         </div>""", unsafe_allow_html=True)
     with c2:
         st.markdown(f"""<div class="kpi">
@@ -1831,7 +1831,7 @@ elif page == "🌾 Soybean Intelligence":
                 <div class="mrow">
                   <div>
                     <div style="font-weight:700;color:#f1f5f9;font-size:.95rem;">{row.get('market','—')} {bh}</div>
-                    <div style="font-size:.78rem;color:#475569;margin-top:3px;">{row.get('state','—')} · {row.get('district','—')}</div>
+                    <div style="font-size:.78rem;color:#94a3b8;margin-top:3px;">{row.get('state','—')} · {row.get('district','—')}</div>
                     <div style="font-size:.75rem;color:#334155;margin-top:2px;">Range: ₹{int(lo):,} – ₹{int(hi):,}</div>
                   </div>
                   <div style="text-align:right;">
@@ -1881,7 +1881,7 @@ elif page == "🌾 Soybean Intelligence":
                 arr  = "▲" if diff >= 0 else "▼"
                 st.markdown(f"""<div class="prow">
                   <div><div style="font-weight:700;color:#f1f5f9;">+{h} Days</div>
-                  <div style="font-size:.78rem;color:#475569;">{fd}</div></div>
+                  <div style="font-size:.78rem;color:#94a3b8;">{fd}</div></div>
                   <div style="text-align:right;">
                     <div style="font-size:1.25rem;font-weight:800;color:#f1f5f9;">₹{p:,}</div>
                     <div style="font-size:.8rem;color:{col};font-weight:600;">{arr} ₹{abs(diff):,} ({pct:+.1f}%)</div>
@@ -1923,7 +1923,7 @@ elif page == "🌾 Soybean Intelligence":
             st.markdown(f"""<div class="kpi" style="padding:24px;">
               <div class="kpi-label">Trend</div><div style="font-size:2.2rem;">{ti}</div>
               <div style="font-size:.95rem;font-weight:700;color:{tc};margin-top:8px;">{tl}</div>
-              <div style="font-size:.78rem;color:#475569;margin-top:4px;">₹{slope:+.1f}/day</div>
+              <div style="font-size:.78rem;color:#94a3b8;margin-top:4px;">₹{slope:+.1f}/day</div>
             </div>""", unsafe_allow_html=True)
         vol = si_hist["Price"].tail(30).std()
         if   vol < 100: vl, vc = "LOW",      "#10b981"

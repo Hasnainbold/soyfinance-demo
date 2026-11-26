@@ -1,0 +1,9 @@
+# Dark theme matching the custom CSS in app.py (navy background, slate sidebar).
+# Without this, Streamlit Cloud uses its light theme and widget/sidebar text
+# renders dark-on-dark.
+[theme]
+base = "dark"
+backgroundColor = "#0f172a"
+secondaryBackgroundColor = "#1e293b"
+textColor = "#f8fafc"
+primaryColor = "#3b82f6"
