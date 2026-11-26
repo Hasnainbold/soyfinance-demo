@@ -1642,6 +1642,7 @@ elif page == "🌾 Soybean Intelligence":
 
     # History & predictions
     si_hist  = hist_df.copy()
+    si_hist["Price"] = si_hist["Price"].astype(float)  # int column can't hold a float avg in pandas 3
     si_hist.loc[si_hist.index[-1], "Price"] = si_avg
     si_horizons = [7, 15, 30, 60, si_horizon]
     si_pts, si_pred_df = make_prediction(si_hist, si_horizons, si_horizon)
