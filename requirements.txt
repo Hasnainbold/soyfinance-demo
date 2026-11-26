@@ -1,28 +1,11 @@
-streamlit==1.45.1
-plotly==6.1.2
-pandas==2.2.3
-numpy==2.2.6
-openpyxl==3.1.5
-requests==2.32.3
-urllib3==2.4.0
-scikit-learn==1.6.1
-scipy>=1.11.0
+streamlit>=1.45
+plotly>=6.1
+pandas>=2.2
+numpy>=2.2
+openpyxl>=3.1
+requests>=2.32
+urllib3>=2.4
+scikit-learn>=1.6
+scipy>=1.11
 pdfplumber>=0.11
 rapidfuzz>=3.0
-
-
-
-
-
-Profile 
---KYC
---PAN
---CIBIL Score
---BANK stamenent 
---bussiness ke prfile
---land record 
---we need to idenfify crop ke liye invoice kya kya le rahi hai
-
---e mandi
---
-
